@@ -529,6 +529,7 @@ const callAnotherApi = callApi.create({
 - `auth`: Authorization header value.
 - `bodySerializer`: Custom function to serialize the body object into a string.
 - `responseParser`: Custom function to parse the response string into an object.
+- `responseValidator`: Custom function to validate the response object before it is returned.
 - `resultMode`: Mode of the result, can influence how results are handled or returned. (default: "all")
 - `cancelRedundantRequests`: If true, cancels previous unfinished requests to the same URL. (default: true)
 - `baseURL`: Base URL to be prepended to all request URLs.
